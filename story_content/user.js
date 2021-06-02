@@ -2,32 +2,20 @@ function ExecuteScript(strId)
 {
   switch (strId)
   {
-      case "6CxyTDtIaFJ":
+      case "5jIYFdwGdFI":
         Script1();
         break;
-      case "5nF12Z68qZb":
+      case "5zgZYSvRlhS":
         Script2();
         break;
-      case "5pCjBV38Sl5":
+      case "6aw0696jLRB":
         Script3();
         break;
-      case "6CBh4Rf8IFT":
+      case "5rvEDnmjVBx":
         Script4();
         break;
-      case "6ObqVOC8yaF":
+      case "65wYoYlYrdn":
         Script5();
-        break;
-      case "6FLh51POP32":
-        Script6();
-        break;
-      case "607vsCjZCcW":
-        Script7();
-        break;
-      case "6nQZbUSobxY":
-        Script8();
-        break;
-      case "6509vYMSIbT":
-        Script9();
         break;
   }
 }
@@ -51,37 +39,6 @@ storyline =
 
 function Script2()
 {
-  var head = document.getElementsByTagName('head')[0];
-var script = document.createElement('script');
-script.src = '//code.jquery.com/jquery-1.11.0.min.js';
-script.type = 'text/javascript';
-head.appendChild(script)
-}
-
-function Script3()
-{
-  //DELAY SO JQUERY LIBRARY IS LOADED
-setTimeout(function (){
- 
-//Export to Google
-$.ajax({
-url: WEB_APP_URL,
-type: "POST",
-data : storyline,
-success: function(data)
-{
-console.log(data);
-},
-error: function(err) {
-console.log('Error:', err);
-}
-});
-return false;
-}, 1000);
-}
-
-function Script4()
-{
   var player = GetPlayer();
  
 //PLACE YOUR WEB APP URL
@@ -96,38 +53,7 @@ storyline =
 }
 }
 
-function Script5()
-{
-  var head = document.getElementsByTagName('head')[0];
-var script = document.createElement('script');
-script.src = '//code.jquery.com/jquery-1.11.0.min.js';
-script.type = 'text/javascript';
-head.appendChild(script)
-}
-
-function Script6()
-{
-  //DELAY SO JQUERY LIBRARY IS LOADED
-setTimeout(function (){
- 
-//Export to Google
-$.ajax({
-url: WEB_APP_URL,
-type: "POST",
-data : storyline,
-success: function(data)
-{
-console.log(data);
-},
-error: function(err) {
-console.log('Error:', err);
-}
-});
-return false;
-}, 1000);
-}
-
-function Script7()
+function Script3()
 {
   var player = GetPlayer();
  
@@ -144,7 +70,7 @@ storyline =
 }
 }
 
-function Script8()
+function Script4()
 {
   var head = document.getElementsByTagName('head')[0];
 var script = document.createElement('script');
@@ -153,7 +79,7 @@ script.type = 'text/javascript';
 head.appendChild(script)
 }
 
-function Script9()
+function Script5()
 {
   //DELAY SO JQUERY LIBRARY IS LOADED
 setTimeout(function (){
