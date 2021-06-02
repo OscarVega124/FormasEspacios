@@ -2,13 +2,13 @@ function ExecuteScript(strId)
 {
   switch (strId)
   {
-      case "6N9o3NgkmTj":
+      case "66pDtEWfi3m":
         Script1();
         break;
-      case "6TmPcoHMp2P":
+      case "6GKgxHzqM0X":
         Script2();
         break;
-      case "6J133nTMm2R":
+      case "6ZHTglHxBFd":
         Script3();
         break;
   }
@@ -28,7 +28,7 @@ function Script2()
   var player = GetPlayer();
  
 //PLACE YOUR WEB APP URL
-WEB_APP_URL = "https://script.google.com/macros/s/AKfycbxoh2DQSYa2d8dt6PnkYUzjzz1dQqoB-RYtF2Q4-EVNkxU66PAo/exec";
+WEB_APP_URL = "https://script.google.com/macros/s/AKfycbyYIwFZ0kRP28wWDqyGhPg3q-gKs6fvqF-o15DLq0mSRggiQxKW/exec";
  
 // STORE ARTICULATE STORYLINE VARIABLES
 // "Columnname_Google_Spreadsheet" : player.GetVar("Name_Storyline_Variable")
