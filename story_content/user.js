@@ -2,31 +2,31 @@ function ExecuteScript(strId)
 {
   switch (strId)
   {
-      case "6mMLYC8gTyC":
+      case "6epgkYRglqU":
         Script1();
         break;
-      case "65WVy6aJ8OT":
+      case "5c8xOlRHwzC":
         Script2();
         break;
-      case "5pnfnDDW5x5":
+      case "6k7bKigq3T0":
         Script3();
         break;
-      case "6lbbZOQ2Bnm":
+      case "6kJk5FuvhOK":
         Script4();
         break;
-      case "6j5q5Ou0GJg":
+      case "5hoSQAySbzV":
         Script5();
         break;
-      case "5zN252FEB3Q":
+      case "6qdCNF2QWGa":
         Script6();
         break;
-      case "6X1t94dNLQD":
+      case "6dceKAM1oB9":
         Script7();
         break;
-      case "6p8MJwgtA1W":
+      case "6ZRKvHo7TmW":
         Script8();
         break;
-      case "6nW07VHM5i1":
+      case "6En92diBYK0":
         Script9();
         break;
   }
@@ -37,7 +37,7 @@ function Script1()
   var player = GetPlayer();
  
 //PLACE YOUR WEB APP URL
-WEB_APP_URL = "https://script.google.com/macros/s/AKfycbzKgiKYKyKhWXLZnBLO0v9vf1JSmZS7s6KYjGeEta9tcVZ4UPZR/exec";
+WEB_APP_URL = "https://script.google.com/macros/s/AKfycbyYIwFZ0kRP28wWDqyGhPg3q-gKs6fvqF-o15DLq0mSRggiQxKW/exec";
  
 // STORE ARTICULATE STORYLINE VARIABLES
 // "Columnname_Google_Spreadsheet" : player.GetVar("Name_Storyline_Variable")
@@ -85,7 +85,7 @@ function Script4()
   var player = GetPlayer();
  
 //PLACE YOUR WEB APP URL
-WEB_APP_URL = "https://script.google.com/macros/s/AKfycbzKgiKYKyKhWXLZnBLO0v9vf1JSmZS7s6KYjGeEta9tcVZ4UPZR/exec";
+WEB_APP_URL = "https://script.google.com/macros/s/AKfycbyYIwFZ0kRP28wWDqyGhPg3q-gKs6fvqF-o15DLq0mSRggiQxKW/exec";
  
 // STORE ARTICULATE STORYLINE VARIABLES
 // "Columnname_Google_Spreadsheet" : player.GetVar("Name_Storyline_Variable")
@@ -132,7 +132,7 @@ function Script7()
   var player = GetPlayer();
  
 //PLACE YOUR WEB APP URL
-WEB_APP_URL = "https://script.google.com/macros/s/AKfycbzKgiKYKyKhWXLZnBLO0v9vf1JSmZS7s6KYjGeEta9tcVZ4UPZR/exec";
+WEB_APP_URL = "https://script.google.com/macros/s/AKfycbyYIwFZ0kRP28wWDqyGhPg3q-gKs6fvqF-o15DLq0mSRggiQxKW/exec";
  
 // STORE ARTICULATE STORYLINE VARIABLES
 // "Columnname_Google_Spreadsheet" : player.GetVar("Name_Storyline_Variable")
