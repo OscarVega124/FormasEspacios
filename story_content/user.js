@@ -2,31 +2,31 @@ function ExecuteScript(strId)
 {
   switch (strId)
   {
-      case "6jkKRumCK41":
+      case "6jh0CA0MaGX":
         Script1();
         break;
-      case "61En3JDRvVU":
+      case "5mfcleaiRqX":
         Script2();
         break;
-      case "5aloJWRdFMr":
+      case "6J5fpRuaOGT":
         Script3();
         break;
-      case "61qDL2GOB77":
+      case "6KUcUFJnKcO":
         Script4();
         break;
-      case "5f81lM3RSwP":
+      case "6YP5HENNKDl":
         Script5();
         break;
-      case "6lvcjmfF5KY":
+      case "5yzcfrxc80Q":
         Script6();
         break;
-      case "64tv0eaBJN0":
+      case "6FJG8PmUOlC":
         Script7();
         break;
-      case "6H2Lrip8Wlq":
+      case "6pVZSKggHKJ":
         Script8();
         break;
-      case "5iQvnNtWLYR":
+      case "5UhgASo0UID":
         Script9();
         break;
   }
@@ -37,7 +37,7 @@ function Script1()
   var player = GetPlayer();
  
 //PLACE YOUR WEB APP URL
-WEB_APP_URL = "https://script.google.com/macros/s/AKfycbyYIwFZ0kRP28wWDqyGhPg3q-gKs6fvqF-o15DLq0mSRggiQxKW/exec";
+WEB_APP_URL = "https://script.google.com/macros/s/AKfycbzKgiKYKyKhWXLZnBLO0v9vf1JSmZS7s6KYjGeEta9tcVZ4UPZR/exec";
  
 // STORE ARTICULATE STORYLINE VARIABLES
 // "Columnname_Google_Spreadsheet" : player.GetVar("Name_Storyline_Variable")
@@ -45,7 +45,7 @@ WEB_APP_URL = "https://script.google.com/macros/s/AKfycbyYIwFZ0kRP28wWDqyGhPg3q-
 storyline =
 {
  "FECHA" : new Date().toJSON().slice(0,10),
- "PAGO" : player.GetVar("pago"),
+ "PAGO" : player.GetVar("pago")
 }
 }
 
@@ -85,7 +85,7 @@ function Script4()
   var player = GetPlayer();
  
 //PLACE YOUR WEB APP URL
-WEB_APP_URL = "https://script.google.com/macros/s/AKfycbyYIwFZ0kRP28wWDqyGhPg3q-gKs6fvqF-o15DLq0mSRggiQxKW/exec";
+WEB_APP_URL = "https://script.google.com/macros/s/AKfycbzKgiKYKyKhWXLZnBLO0v9vf1JSmZS7s6KYjGeEta9tcVZ4UPZR/exec";
  
 // STORE ARTICULATE STORYLINE VARIABLES
 // "Columnname_Google_Spreadsheet" : player.GetVar("Name_Storyline_Variable")
@@ -132,7 +132,7 @@ function Script7()
   var player = GetPlayer();
  
 //PLACE YOUR WEB APP URL
-WEB_APP_URL = "https://script.google.com/macros/s/AKfycbyYIwFZ0kRP28wWDqyGhPg3q-gKs6fvqF-o15DLq0mSRggiQxKW/exec";
+WEB_APP_URL = "https://script.google.com/macros/s/AKfycbzKgiKYKyKhWXLZnBLO0v9vf1JSmZS7s6KYjGeEta9tcVZ4UPZR/exec";
  
 // STORE ARTICULATE STORYLINE VARIABLES
 // "Columnname_Google_Spreadsheet" : player.GetVar("Name_Storyline_Variable")
