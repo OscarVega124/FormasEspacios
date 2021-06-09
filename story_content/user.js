@@ -2,13 +2,13 @@ function ExecuteScript(strId)
 {
   switch (strId)
   {
-      case "6RW6pSZKElJ":
+      case "6ZRaBHm0RjI":
         Script1();
         break;
-      case "6GsAci4ZjaJ":
+      case "67dv97lWBHb":
         Script2();
         break;
-      case "5ncfU4eUaXv":
+      case "5cQegMz8192":
         Script3();
         break;
   }
@@ -17,7 +17,8 @@ function ExecuteScript(strId)
 function Script1()
 {
   var player = GetPlayer();
- 
+var o = {hour:'2-digit', minute:'2-digit', second:'2-digit'};
+
 //PLACE YOUR WEB APP URL
 WEB_APP_URL = "https://script.google.com/macros/s/AKfycbwr6isxAZ8iJOL_WaaaQpGgF0t7Yk7FJ20oyDs5yZQ1ImTcIvI/exec";
  
@@ -27,6 +28,7 @@ WEB_APP_URL = "https://script.google.com/macros/s/AKfycbwr6isxAZ8iJOL_WaaaQpGgF0
 storyline =
 {
  "FECHA" : new Date().toJSON().slice(0,10),
+  "HORA" : o.toJSON().slice(0,10),
  "PAGO" : player.GetVar("pago"),
  "NOMBRE" : player.GetVar("Nom"),
  "DIAP VIS" : player.GetVar("VIS"),
