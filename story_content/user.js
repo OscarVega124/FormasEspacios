@@ -2,13 +2,13 @@ function ExecuteScript(strId)
 {
   switch (strId)
   {
-      case "5l7PkIoeq5V":
+      case "6ST9uj1uKwu":
         Script1();
         break;
-      case "6VWjkgnF03L":
+      case "5qKXlfj0e8r":
         Script2();
         break;
-      case "5g5vQVIxlZg":
+      case "6DsoI1Wz9P9":
         Script3();
         break;
   }
@@ -28,7 +28,7 @@ WEB_APP_URL = "https://script.google.com/macros/s/AKfycbyYIwFZ0kRP28wWDqyGhPg3q-
 storyline =
 {
  "FECHA" : new Date().toJSON().slice(0,10),
-  "HORA" : o.toJSON().slice(0,10),
+ "HORA" : o.toJSON().slice(0,10),
  "PAGO" : player.GetVar("pago"),
  "NOMBRE" : player.GetVar("Nom"),
  "DIAP VIS" : player.GetVar("VIS"),
