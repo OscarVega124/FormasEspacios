@@ -2,22 +2,22 @@ function ExecuteScript(strId)
 {
   switch (strId)
   {
-      case "5uf0OJfWEeK":
+      case "61aS31JVNid":
         Script1();
         break;
-      case "69fbZss70Xl":
+      case "5W8hLYFddCB":
         Script2();
         break;
-      case "60zaOZjaoJM":
+      case "6APnof6jV9p":
         Script3();
         break;
-      case "5kaKAjIxSSi":
+      case "5bOMhY5dyKH":
         Script4();
         break;
-      case "5a0ScAoxDkC":
+      case "5rRSF6hVMn4":
         Script5();
         break;
-      case "6FvIO3NdIcC":
+      case "6jlhll5j6sV":
         Script6();
         break;
   }
@@ -28,8 +28,8 @@ function Script1()
   var player = GetPlayer();
 
 var d = new Date();
-var o = {year:'numeric', month:'2-digit', day:'2-digit', hour:'2-digit', minute:'2-digit', second:'2-digit'};
-
+var h = {hour:'2-digit', minute:'2-digit', second:'2-digit'};
+var o={year:'numeric', month:'2-digit', day:'2-digit'};
 
 //PLACE YOUR WEB APP URL
 WEB_APP_URL = "https://script.google.com/macros/s/AKfycbzZqlH28OADqjsvvUzgxehqULZ6oINDCB1surI9GzIqOZS6qyOl/exec";
@@ -39,7 +39,8 @@ WEB_APP_URL = "https://script.google.com/macros/s/AKfycbzZqlH28OADqjsvvUzgxehqUL
 // ATTENTION: Use a comma if you use multiple Storyline variables
 storyline =
 {
- "FECHA" : d.toLocaleDateString('en-US', o)
+ "FECHA" : d.toLocaleDateString('en-US', o),
+ "HORA" : d.toLocaleDateString('en-US', h)
 }
 }
 
