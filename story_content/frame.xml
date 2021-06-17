@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<bwFrame xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" default_layout="npxnabnsnfns00001100101" textdirection="ltr" textengine="DirectWrite" device="false" fontscale="100" kbshortcuts="false" skip_nav_enabled="true" chromeless="false" outputtype="undefined" theme="unified" themeAccentColor="0x4fbdf4">
+<bwFrame xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" default_layout="npxnabnsnfns00000000101" textdirection="ltr" textengine="DirectWrite" device="false" fontscale="100" kbshortcuts="false" skip_nav_enabled="true" chromeless="false" outputtype="undefined" theme="unified" themeAccentColor="0x558ed5">
   <layouts>
-    <layout name="npnxnanbsnfns00001100101" font="Lato" controllayout="npnxnanbsnfns00001100101" colorscheme="npxnabnsnfns00001100101" string_table="npxnabnsnfns00001100101" />
-    <layout name="pxabnsnfns00001100101" font="Lato" controllayout="pxabnsnfns00001100101" colorscheme="npxnabnsnfns00001100101" string_table="npxnabnsnfns00001100101" />
-    <layout name="npxnabnsnfns00001100101" font="Lato" controllayout="npxnabnsnfns00001100101" colorscheme="npxnabnsnfns00001100101" string_table="npxnabnsnfns00001100101" />
-    <layout name="npnxnanbnsnfns00001100101" font="Lato" controllayout="npnxnanbnsnfns00001100101" colorscheme="npxnabnsnfns00001100101" string_table="npxnabnsnfns00001100101" />
-    <layout name="pxabnsnfns00001100100" font="Lato" controllayout="pxabnsnfns00001100100" colorscheme="npxnabnsnfns00001100101" string_table="npxnabnsnfns00001100101" />
+    <layout name="npnxnanbsnfns00000000101" font="Lato" controllayout="npnxnanbsnfns00000000101" colorscheme="npxnabnsnfns00000000101" string_table="npxnabnsnfns00000000101" />
+    <layout name="pxabnsnfns00000000101" font="Lato" controllayout="pxabnsnfns00000000101" colorscheme="npxnabnsnfns00000000101" string_table="npxnabnsnfns00000000101" />
+    <layout name="npxnabnsnfns00000000101" font="Lato" controllayout="npxnabnsnfns00000000101" colorscheme="npxnabnsnfns00000000101" string_table="npxnabnsnfns00000000101" />
+    <layout name="npnxnanbnsnfns00000000101" font="Lato" controllayout="npnxnanbnsnfns00000000101" colorscheme="npxnabnsnfns00000000101" string_table="npxnabnsnfns00000000101" />
+    <layout name="pxabnsnfns00000000100" font="Lato" controllayout="pxabnsnfns00000000100" colorscheme="npxnabnsnfns00000000101" string_table="npxnabnsnfns00000000101" />
   </layouts>
   <control_options>
     <optiongroups>
@@ -13,29 +13,29 @@
         <options>
           <option name="title_enabled" value="true">
             <options>
-              <option name="title_text" value="PORTA" />
+              <option name="title_text" value="Vida cotidiana en otro idioma II" />
             </options>
           </option>
           <option name="logo_enabled" value="false">
             <options />
           </option>
-          <option name="sidebar_enabled" value="true">
+          <option name="sidebar_enabled" value="false">
             <options>
               <option name="sidebarpos" value="left" />
-              <option name="closed" value="false" />
+              <option name="closed" value="true" />
             </options>
           </option>
           <optionlist name="tabs">
             <listitems>
-              <listitem name="resources" value="true" group="linkright" />
-              <listitem name="outline" value="true" group="sidebar" />
+              <listitem name="outline" value="false" group="linkleft" />
+              <listitem name="resources" value="false" group="linkright" />
               <listitem name="glossary" value="false" group="sidebar" />
               <listitem name="transcript" value="false" group="sidebar" />
             </listitems>
           </optionlist>
           <option name="time_enabled" value="false">
             <options>
-              <option name="time_format" value="" />
+              <option name="time_format" value="remaining" />
             </options>
           </option>
           <option name="video_enabled" value="false">
@@ -58,11 +58,15 @@
       <optiongroup name="controls">
         <options>
           <option name="volume" value="true" />
-          <option name="seekbar" value="false" />
+          <option name="seekbar" value="false">
+            <options>
+              <option name="readonly" value="false" />
+            </options>
+          </option>
           <option name="pauseplay" value="false" />
           <option name="replay" value="false" />
           <option name="search" value="false" />
-          <option name="closed_captions" value="true">
+          <option name="closed_captions" value="false">
             <options>
               <option name="font" value="Lato" />
             </options>
@@ -77,15 +81,15 @@
       </optiongroup>
       <optiongroup name="buttonoptions">
         <options>
-          <option name="next" value="icon" />
-          <option name="previous" value="icon" />
-          <option name="submit" value="icon" />
+          <option name="next" value="icontext" />
+          <option name="previous" value="icontext" />
+          <option name="submit" value="icontext" />
         </options>
       </optiongroup>
     </optiongroups>
   </control_options>
   <control_layouts>
-    <control_layout name="npnxnanbsnfns00001100101">
+    <control_layout name="npnxnanbsnfns00000000101">
       <control name="volume" enabled="true" />
       <control name="seekbar" enabled="false" />
       <control name="replay" enabled="false" />
@@ -98,17 +102,17 @@
       <control name="submit" enabled="true" />
       <control name="finish" enabled="false" />
       <control name="submitall" enabled="false" />
-      <control name="resources" enabled="true" />
+      <control name="resources" enabled="false" />
       <control name="glossary" enabled="false" />
       <control name="transcript" enabled="false" />
-      <control name="outline" enabled="true">
+      <control name="outline" enabled="false">
         <controls>
           <control name="search" enabled="false" />
         </controls>
       </control>
       <control name="close_btn" enabled="true" />
     </control_layout>
-    <control_layout name="pxabnsnfns00001100101">
+    <control_layout name="pxabnsnfns00000000101">
       <control name="volume" enabled="true" />
       <control name="seekbar" enabled="false" />
       <control name="replay" enabled="false" />
@@ -121,17 +125,17 @@
       <control name="submit" enabled="false" />
       <control name="finish" enabled="false" />
       <control name="submitall" enabled="false" />
-      <control name="resources" enabled="true" />
+      <control name="resources" enabled="false" />
       <control name="glossary" enabled="false" />
       <control name="transcript" enabled="false" />
-      <control name="outline" enabled="true">
+      <control name="outline" enabled="false">
         <controls>
           <control name="search" enabled="false" />
         </controls>
       </control>
       <control name="close_btn" enabled="true" />
     </control_layout>
-    <control_layout name="npxnabnsnfns00001100101">
+    <control_layout name="npxnabnsnfns00000000101">
       <control name="volume" enabled="true" />
       <control name="seekbar" enabled="false" />
       <control name="replay" enabled="false" />
@@ -144,17 +148,17 @@
       <control name="submit" enabled="false" />
       <control name="finish" enabled="false" />
       <control name="submitall" enabled="false" />
-      <control name="resources" enabled="true" />
+      <control name="resources" enabled="false" />
       <control name="glossary" enabled="false" />
       <control name="transcript" enabled="false" />
-      <control name="outline" enabled="true">
+      <control name="outline" enabled="false">
         <controls>
           <control name="search" enabled="false" />
         </controls>
       </control>
       <control name="close_btn" enabled="true" />
     </control_layout>
-    <control_layout name="npnxnanbnsnfns00001100101">
+    <control_layout name="npnxnanbnsnfns00000000101">
       <control name="volume" enabled="true" />
       <control name="seekbar" enabled="false" />
       <control name="replay" enabled="false" />
@@ -167,17 +171,17 @@
       <control name="submit" enabled="false" />
       <control name="finish" enabled="false" />
       <control name="submitall" enabled="false" />
-      <control name="resources" enabled="true" />
+      <control name="resources" enabled="false" />
       <control name="glossary" enabled="false" />
       <control name="transcript" enabled="false" />
-      <control name="outline" enabled="true">
+      <control name="outline" enabled="false">
         <controls>
           <control name="search" enabled="false" />
         </controls>
       </control>
       <control name="close_btn" enabled="true" />
     </control_layout>
-    <control_layout name="pxabnsnfns00001100100">
+    <control_layout name="pxabnsnfns00000000100">
       <control name="volume" enabled="true" />
       <control name="seekbar" enabled="false" />
       <control name="replay" enabled="false" />
@@ -190,10 +194,10 @@
       <control name="submit" enabled="false" />
       <control name="finish" enabled="false" />
       <control name="submitall" enabled="false" />
-      <control name="resources" enabled="true" />
+      <control name="resources" enabled="false" />
       <control name="glossary" enabled="false" />
       <control name="transcript" enabled="false" />
-      <control name="outline" enabled="true">
+      <control name="outline" enabled="false">
         <controls>
           <control name="search" enabled="false" />
         </controls>
@@ -202,7 +206,7 @@
     </control_layout>
   </control_layouts>
   <colorschemes>
-    <colorscheme name="npxnabnsnfns00001100101">
+    <colorscheme name="npxnabnsnfns00000000101">
       <color_group name="accessibility">
         <group_colors>
           <color name="focus_rect">
@@ -1124,7 +1128,7 @@
           <color name="brandhighlight">
             <fill type="linear" rotation="90">
               <colors>
-                <color rgb="0x4FBDF4" alpha="100" stop="0" />
+                <color rgb="0x558ED5" alpha="100" stop="0" />
               </colors>
             </fill>
           </color>
@@ -1268,7 +1272,7 @@
           <color name="toggle_track_on">
             <fill type="linear" rotation="90">
               <colors>
-                <color rgb="0x4FBDF4" alpha="100" stop="0" />
+                <color rgb="0x558ED5" alpha="100" stop="0" />
               </colors>
             </fill>
           </color>
@@ -1358,96 +1362,96 @@
     </colorscheme>
   </colorschemes>
   <string_tables>
-    <string_table name="npxnabnsnfns00001100101">
-      <string id="more_info">Más información</string>
-      <string id="bio">Biografía</string>
-      <string id="enable_keyboardshortcuts">Activar atajos del teclado</string>
-      <string id="action">Acción</string>
-      <string id="shortcut">Atajo</string>
-      <string id="shortcuthelp">Listar los atajos de teclado</string>
-      <string id="keyboardshortcuts">Atajos de teclado</string>
-      <string id="acctext_shortcut">Activar/Desactivar texto accesible</string>
-      <string id="togglezoom">Activar/Desactivar el zoom para llenar la pantalla</string>
-      <string id="closedcaptions_shortcut">Activar/Desactivar accesibilidad del texto</string>
-      <string id="previous_shortcut">Diapositiva anterior</string>
-      <string id="submit_shortcut">Validar diapositiva</string>
-      <string id="playpause_shortcut">Reproducir / pausar</string>
-      <string id="next_shortcut">Siguiente diapositiva</string>
-      <string id="mute_shortcut">Silenciar / activar sonido</string>
-      <string id="replay_shortcut">Volver a reproducir la diapositiva</string>
-      <string id="prev">ANT</string>
-      <string id="acc_previous">anterior</string>
-      <string id="clear">Borrar y volver al menú</string>
-      <string id="close">Cerrar</string>
-      <string id="continue">Continuar</string>
-      <string id="continueresponsive">Continuar</string>
-      <string id="submit">ENVIAR</string>
-      <string id="acc_submit">presentar</string>
-      <string id="submitall">ENVIAR TODO</string>
-      <string id="acc_submitall">enviar todo</string>
-      <string id="filter">Filtro</string>
-      <string id="acc_finish">finalizar</string>
-      <string id="acc_pause">pausa</string>
-      <string id="restart">Reiniciar</string>
-      <string id="acc_replay">repetición</string>
-      <string id="acc_play">Reproducir</string>
-      <string id="next">SIG</string>
-      <string id="acc_next">siguiente</string>
-      <string id="finish">FINALIZAR</string>
-      <string id="acc_volume">volumen</string>
-      <string id="keyboardshortcuts_lower">Atajos de teclado</string>
-      <string id="zoom_to_fit">Habilitar zoom del navegador</string>
-      <string id="accessible_text">Texto accesible</string>
-      <string id="acc_definition">definición</string>
-      <string id="definition">Definición</string>
-      <string id="search_results">Resultados de la búsqueda</string>
-      <string id="terms">Condiciones</string>
-      <string id="search_in">Buscar en:</string>
-      <string id="send_an_email">Enviar correo electrónico</string>
-      <string id="transcript_chk">Notas</string>
-      <string id="slide_text_chk">Texto Diapositiva</string>
-      <string id="three_image_viewed">vistos</string>
-      <string id="three_image_item">ítem</string>
-      <string id="three_image_items">ítems</string>
-      <string id="three_image_of">de</string>
-      <string id="settings_tip">Ajustes</string>
-      <string id="previous_slide_tip">Diapositiva anterior</string>
-      <string id="unmute_tip">Desactivar silencio</string>
-      <string id="submit_tip">Enviar</string>
-      <string id="pause_tip">Pausar</string>
-      <string id="play_tip">Reproducir</string>
-      <string id="next_slide_tip">Siguiente diapositiva</string>
-      <string id="mute_tip">Silenciar</string>
-      <string id="closed_captions_tip">Activar / desactivar subtítulos</string>
-      <string id="replay_tip">Reproducir</string>
-      <string id="search">Buscar ...</string>
-      <string id="acc_slide_progress">progreso de la diapositiva</string>
-      <string id="desktop_start">Comenzar el curso</string>
-      <string id="mobile_start">Comenzar el curso</string>
-      <string id="acc_search_input">búsqueda</string>
-      <string id="acc_locked">bloqueado</string>
-      <string id="acc_visited">visitado</string>
-      <string id="sidebar_toggle">Mostrar/ocultar barra lateral</string>
-      <string id="search_toggle">Buscar</string>
-      <string id="question_list">Lista de preguntas</string>
-      <string id="check_include">De verificación para incluir</string>
-      <string id="disabled_orientation">Rote el dispositivo</string>
-      <string id="closed_captions">Subtítulos</string>
-      <string id="glossary">Glosario</string>
-      <string id="outline">Menú</string>
-      <string id="transcript">Notas</string>
-      <string id="resources">Recursos</string>
-      <string id="acc_resources">los recursos</string>
-      <string id="exit">Salir</string>
-      <string id="resume">Continuar</string>
-      <string id="acc_skipnavigation">Volver a la diapositiva</string>
+    <string_table name="npxnabnsnfns00000000101">
+      <string id="more_info">More info</string>
+      <string id="bio">Bio</string>
+      <string id="enable_keyboardshortcuts">Enable keyboard shortcuts</string>
+      <string id="action">Action</string>
+      <string id="shortcut">Shortcut</string>
+      <string id="shortcuthelp">List keyboard shortcuts</string>
+      <string id="keyboardshortcuts">Keyboard Shortcuts</string>
+      <string id="acctext_shortcut">Toggle accessible text</string>
+      <string id="togglezoom">Toggle zoom to fit</string>
+      <string id="closedcaptions_shortcut">Toggle closed captions</string>
+      <string id="previous_shortcut">Previous Slide</string>
+      <string id="submit_shortcut">Submit Slide</string>
+      <string id="playpause_shortcut">Play / Pause</string>
+      <string id="next_shortcut">Next Slide</string>
+      <string id="mute_shortcut">Mute / Unmute</string>
+      <string id="replay_shortcut">Replay Slide</string>
+      <string id="prev">PREV</string>
+      <string id="acc_previous">previous</string>
+      <string id="clear">Clear and return to menu</string>
+      <string id="close">Close</string>
+      <string id="continue">Continue</string>
+      <string id="continueresponsive">Continue</string>
+      <string id="submit">SUBMIT</string>
+      <string id="acc_submit">submit</string>
+      <string id="submitall">SUBMIT ALL</string>
+      <string id="acc_submitall">submit all</string>
+      <string id="filter">Filter</string>
+      <string id="acc_finish">finish</string>
+      <string id="acc_pause">pause</string>
+      <string id="restart">Restart</string>
+      <string id="acc_replay">replay</string>
+      <string id="acc_play">play</string>
+      <string id="next">NEXT</string>
+      <string id="acc_next">next</string>
+      <string id="finish">FINISH</string>
+      <string id="acc_volume">volume</string>
+      <string id="keyboardshortcuts_lower">Keyboard shortcuts</string>
+      <string id="zoom_to_fit">Zoom to fit</string>
+      <string id="accessible_text">Accessible text</string>
+      <string id="acc_definition">definition</string>
+      <string id="definition">Definition</string>
+      <string id="search_results">Search Results</string>
+      <string id="terms">Terms</string>
+      <string id="search_in">Search in:</string>
+      <string id="send_an_email">Send an email</string>
+      <string id="transcript_chk">Notes</string>
+      <string id="slide_text_chk">Slide Text</string>
+      <string id="three_image_viewed">viewed</string>
+      <string id="three_image_item">item</string>
+      <string id="three_image_items">items</string>
+      <string id="three_image_of">of</string>
+      <string id="settings_tip">Settings</string>
+      <string id="previous_slide_tip">Previous Slide</string>
+      <string id="unmute_tip">Unmute</string>
+      <string id="submit_tip">Submit</string>
+      <string id="pause_tip">Pause</string>
+      <string id="play_tip">Play</string>
+      <string id="next_slide_tip">Next Slide</string>
+      <string id="mute_tip">Mute</string>
+      <string id="closed_captions_tip">Closed Captions</string>
+      <string id="replay_tip">Replay Slide</string>
+      <string id="search">Search...</string>
+      <string id="acc_slide_progress">slide progress</string>
+      <string id="desktop_start">Start Course</string>
+      <string id="mobile_start">Start Course</string>
+      <string id="acc_search_input">search</string>
+      <string id="acc_locked">locked</string>
+      <string id="acc_visited">visited</string>
+      <string id="sidebar_toggle">Sidebar Toggle</string>
+      <string id="search_toggle">Search</string>
+      <string id="question_list">Question List</string>
+      <string id="check_include">Check to include</string>
+      <string id="disabled_orientation">Please rotate your device</string>
+      <string id="closed_captions">Captions</string>
+      <string id="glossary">Glossary</string>
+      <string id="outline">Menu</string>
+      <string id="transcript">Notes</string>
+      <string id="resources">Resources</string>
+      <string id="acc_resources">resources</string>
+      <string id="exit">Exit</string>
+      <string id="resume">Resume</string>
+      <string id="acc_skipnavigation">Skip navigation. Press enter to return to the slide.</string>
       <string id="alt_key">Alt</string>
       <string id="ctrl_key">Ctrl</string>
-      <string id="spacebar_key">Espacio</string>
-      <string id="enter_key">Intro</string>
-      <string id="shift_key">Mayúsculas</string>
-      <string id="acc_closed_captions">Subtítulos cerrados. Presiona la barra de espacio para activar y desactivar los subtítulos.</string>
-      <string id="acc_active">activo</string>
+      <string id="spacebar_key">Space</string>
+      <string id="enter_key">Enter</string>
+      <string id="shift_key">Shift</string>
+      <string id="acc_closed_captions">Closed captions. Press the spacebar to toggle captions on and off.</string>
+      <string id="acc_active">active</string>
     </string_table>
   </string_tables>
   <fonts>
@@ -1462,15 +1466,18 @@
   <nav_data>
     <outline>
       <links>
-        <slidelink slideid="_player.6bBqTjYUpxP" displaytext="Escena sin título" expand="true" type="slide">
+        <slidelink slideid="_player.6TFAiJ3so97" displaytext="English version" expand="true" type="slide">
           <links>
-            <slidelink slideid="_player.6bBqTjYUpxP.63Wmq7BCl5O" displaytext="Diapositiva sin título" expand="false" type="slide" />
+            <slidelink slideid="_player.6TFAiJ3so97.68j0aB8csi5" displaytext="Diapositiva sin título" expand="false" type="slide" />
+            <slidelink slideid="_player.6TFAiJ3so97.5kirbJJyRiV" displaytext="Llenado de Datos" expand="false" type="slide" />
+            <slidelink slideid="_player.6TFAiJ3so97.5mzr10cmdz0" displaytext="Encuesta" expand="false" type="slide" />
           </links>
         </slidelink>
+        <slidelink slideid="" displaytext="Spanish version" expand="true" type="slide" />
       </links>
     </outline>
   </nav_data>
-  <resource_data description="&lt;p align='left'&gt;&lt;font face='Lato' style='font-size: 11px;' size='11' color='#BABBBA'&gt;Estos son algunos v&amp;#237;nculos y documentos &amp;#250;tiles:&lt;/font&gt;&lt;/p&gt;" />
+  <resource_data description="" />
   <transcript_data />
   <glossary_data />
 </bwFrame>
