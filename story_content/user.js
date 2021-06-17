@@ -2,31 +2,31 @@ function ExecuteScript(strId)
 {
   switch (strId)
   {
-      case "6YXfdMjmH2D":
+      case "5mbb5yFB1Fu":
         Script1();
         break;
-      case "5t28Q0wCIlK":
+      case "6pWga6ImA4c":
         Script2();
         break;
-      case "6BY1c0axx00":
+      case "5rN0pzrUYSI":
         Script3();
         break;
-      case "5qVniZASoOO":
+      case "5wXw6hLbk6c":
         Script4();
         break;
-      case "6d8IGEfyjc1":
+      case "6hoGIvj5lg9":
         Script5();
         break;
-      case "6QV3Tl92QCP":
+      case "6nYGad6aod3":
         Script6();
         break;
-      case "5YEaIr8ONrh":
+      case "5sclKWeyOjW":
         Script7();
         break;
-      case "6JU7Y9RJPHm":
+      case "6ewtRr1SybE":
         Script8();
         break;
-      case "6cuOryAYoBk":
+      case "6bi67fLYOBd":
         Script9();
         break;
   }
@@ -157,7 +157,7 @@ WEB_APP_URL = "https://script.google.com/macros/s/AKfycbxeyh3zhG_QrgGPxlEiUzR42f
 // ATTENTION: Use a comma if you use multiple Storyline variables
 storyline =
 {
-  "DIAPOSITIVAS VISUALISADAS" : player.GetVar("VIS"),
+  "DIAPOSITIVA VISUALISADAS" : player.GetVar("VIS"),
   "TOTAL DE DIAPOSITIVAS" : player.GetVar("TOT"),
   "HORA SALIDA" : d.toLocaleDateString('en-US', o)
 }
