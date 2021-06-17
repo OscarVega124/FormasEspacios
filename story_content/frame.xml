@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<bwFrame xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" default_layout="pxabnsnfns00001100101" textdirection="ltr" textengine="DirectWrite" device="false" fontscale="100" kbshortcuts="false" skip_nav_enabled="true" chromeless="false" outputtype="undefined" theme="unified" themeAccentColor="0x4f81bd">
+<bwFrame xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" default_layout="pxabnsnfns00001100101" textdirection="ltr" textengine="DirectWrite" device="false" fontscale="100" kbshortcuts="false" skip_nav_enabled="true" chromeless="false" outputtype="undefined" theme="unified" themeAccentColor="0x4fbdf4">
   <layouts>
     <layout name="npnxnanbsnfns00001100101" font="Lato" controllayout="npnxnanbsnfns00001100101" colorscheme="pxabnsnfns00001100101" string_table="pxabnsnfns00001100101" />
     <layout name="pxabnsnfns00001100101" font="Lato" controllayout="pxabnsnfns00001100101" colorscheme="pxabnsnfns00001100101" string_table="pxabnsnfns00001100101" />
@@ -13,7 +13,7 @@
         <options>
           <option name="title_enabled" value="true">
             <options>
-              <option name="title_text" value="Prueba" />
+              <option name="title_text" value="Sin t&amp;#237;tulo1" />
             </options>
           </option>
           <option name="logo_enabled" value="false">
@@ -1124,7 +1124,7 @@
           <color name="brandhighlight">
             <fill type="linear" rotation="90">
               <colors>
-                <color rgb="0x4F81BD" alpha="100" stop="0" />
+                <color rgb="0x4FBDF4" alpha="100" stop="0" />
               </colors>
             </fill>
           </color>
@@ -1268,7 +1268,7 @@
           <color name="toggle_track_on">
             <fill type="linear" rotation="90">
               <colors>
-                <color rgb="0x4F81BD" alpha="100" stop="0" />
+                <color rgb="0x4FBDF4" alpha="100" stop="0" />
               </colors>
             </fill>
           </color>
@@ -1370,10 +1370,10 @@
       <string id="togglezoom">Activar/Desactivar el zoom para llenar la pantalla</string>
       <string id="closedcaptions_shortcut">Activar/Desactivar accesibilidad del texto</string>
       <string id="previous_shortcut">Diapositiva anterior</string>
-      <string id="submit_shortcut">Enviar intento</string>
-      <string id="playpause_shortcut">Reproducir/Pausar</string>
+      <string id="submit_shortcut">Validar diapositiva</string>
+      <string id="playpause_shortcut">Reproducir / pausar</string>
       <string id="next_shortcut">Siguiente diapositiva</string>
-      <string id="mute_shortcut">Silenciar/Desactivar silencio</string>
+      <string id="mute_shortcut">Silenciar / activar sonido</string>
       <string id="replay_shortcut">Volver a reproducir la diapositiva</string>
       <string id="prev">ANT</string>
       <string id="acc_previous">anterior</string>
@@ -1396,7 +1396,7 @@
       <string id="finish">FINALIZAR</string>
       <string id="acc_volume">volumen</string>
       <string id="keyboardshortcuts_lower">Atajos de teclado</string>
-      <string id="zoom_to_fit">Zoom para ajustar</string>
+      <string id="zoom_to_fit">Habilitar zoom del navegador</string>
       <string id="accessible_text">Texto accesible</string>
       <string id="acc_definition">definición</string>
       <string id="definition">Definición</string>
@@ -1418,8 +1418,8 @@
       <string id="play_tip">Reproducir</string>
       <string id="next_slide_tip">Siguiente diapositiva</string>
       <string id="mute_tip">Silenciar</string>
-      <string id="closed_captions_tip">Subtítulos</string>
-      <string id="replay_tip">Volver a reproducir la diapositiva</string>
+      <string id="closed_captions_tip">Activar / desactivar subtítulos</string>
+      <string id="replay_tip">Reproducir</string>
       <string id="search">Buscar ...</string>
       <string id="acc_slide_progress">progreso de la diapositiva</string>
       <string id="desktop_start">Comenzar el curso</string>
@@ -1462,11 +1462,9 @@
   <nav_data>
     <outline>
       <links>
-        <slidelink slideid="_player.5rtLEiacWIK" displaytext="Escena sin título" expand="true" type="slide">
+        <slidelink slideid="_player.65IAn1pS2dk" displaytext="Escena sin título" expand="true" type="slide">
           <links>
-            <slidelink slideid="_player.5rtLEiacWIK.625cGFEWdcU" displaytext="Diapositiva sin título" expand="false" type="slide" />
-            <slidelink slideid="_player.5rtLEiacWIK.67SuYpos7sO" displaytext="Diapositiva sin título" expand="false" type="slide" />
-            <slidelink slideid="_player.5rtLEiacWIK.6PS54ilLh9a" displaytext="Diapositiva sin título" expand="false" type="slide" />
+            <slidelink slideid="_player.65IAn1pS2dk.6ajmOJudhDR" displaytext="Diapositiva sin título" expand="false" type="slide" />
           </links>
         </slidelink>
       </links>
