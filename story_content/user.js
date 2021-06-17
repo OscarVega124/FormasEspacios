@@ -2,13 +2,13 @@ function ExecuteScript(strId)
 {
   switch (strId)
   {
-      case "5k4siXFRby5":
+      case "5V6zzaiBBcu":
         Script1();
         break;
-      case "6J7bmT6aRJG":
+      case "6QFEftZMS9b":
         Script2();
         break;
-      case "6UrBEmG1Gao":
+      case "6nVj9Ny3iDa":
         Script3();
         break;
   }
@@ -16,19 +16,9 @@ function ExecuteScript(strId)
 
 function Script1()
 {
-  var head = document.getElementsByTagName('head')[0];
-var script = document.createElement('script');
-script.src = '//code.jquery.com/jquery-1.11.0.min.js';
-script.type = 'text/javascript';
-head.appendChild(script)
-}
-
-function Script2()
-{
   var player = GetPlayer();
 
 var d = new Date();
-
 var o = {hour:'2-digit', minute:'2-digit', second:'2-digit'};
  
 //PLACE YOUR WEB APP URL
@@ -41,6 +31,15 @@ storyline =
 {
  "HORA INICIO" : d.toLocaleDateString('en-US', o)
 }
+}
+
+function Script2()
+{
+  var head = document.getElementsByTagName('head')[0];
+var script = document.createElement('script');
+script.src = '//code.jquery.com/jquery-1.11.0.min.js';
+script.type = 'text/javascript';
+head.appendChild(script)
 }
 
 function Script3()
