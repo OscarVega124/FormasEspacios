@@ -2,22 +2,22 @@ function ExecuteScript(strId)
 {
   switch (strId)
   {
-      case "6fQWGHVH2rd":
+      case "6Rdelp6ZGER":
         Script1();
         break;
-      case "5lzkrlwoHO2":
+      case "6HaTJ9SlaqK":
         Script2();
         break;
-      case "6S1PkI9zY1K":
+      case "5nGcX9N8s5l":
         Script3();
         break;
-      case "5zf9GNaKJfA":
+      case "6jVKb80zfK9":
         Script4();
         break;
-      case "5fbxNvDldCq":
+      case "5jQkdMJlJwT":
         Script5();
         break;
-      case "6cLukqs4wFL":
+      case "6IbJabozvs6":
         Script6();
         break;
   }
