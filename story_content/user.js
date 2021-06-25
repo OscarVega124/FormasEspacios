@@ -2,87 +2,38 @@ function ExecuteScript(strId)
 {
   switch (strId)
   {
-      case "6K7W5Huhuy1":
+      case "6JJA7tPMFDB":
         Script1();
         break;
-      case "6RmkFJlC4zu":
+      case "6ZM3BJfQ4R2":
         Script2();
         break;
-      case "6pnzMWhoJsO":
+      case "5qkxXB4e692":
         Script3();
         break;
-      case "5Xrp4I5g7um":
+      case "5rUhOrKVkO7":
         Script4();
         break;
-      case "6loeZTsqL3j":
+      case "6KDF4XpbOlI":
         Script5();
         break;
-      case "6CeIC0ddLOA":
+      case "5YmWZuxBI68":
         Script6();
-        break;
-      case "62z76NwnNqr":
-        Script7();
-        break;
-      case "5c6KeRynEjg":
-        Script8();
-        break;
-      case "5nv3iHAF8DD":
-        Script9();
         break;
   }
 }
 
 function Script1()
 {
-  var player = GetPlayer();
-
-var d = new Date();
-var o = {hour:'2-digit', minute:'2-digit', second:'2-digit'};
- 
-//PLACE YOUR WEB APP URL
-WEB_APP_URL = "https://script.google.com/macros/s/AKfycbygKeebv1BWOfjh5DjKHJegcTpCdSnlGQgPwzYAAfGIbIZLR9Vv/exec";
- 
-// STORE ARTICULATE STORYLINE VARIABLES
-// "Columnname_Google_Spreadsheet" : player.GetVar("Name_Storyline_Variable")
-// ATTENTION: Use a comma if you use multiple Storyline variables
-storyline =
-{
- "HORA INICIO" : d.toLocaleDateString('en-US', o)
-}
+  var d = new Date();
+var hour = d.getHours()
+var minute = d.getMinutes()
+var tiem = hour + ":" + minute
+var player = GetPlayer();
+player.SetVar("inicio",tiem);
 }
 
 function Script2()
-{
-  var head = document.getElementsByTagName('head')[0];
-var script = document.createElement('script');
-script.src = '//code.jquery.com/jquery-1.11.0.min.js';
-script.type = 'text/javascript';
-head.appendChild(script)
-}
-
-function Script3()
-{
-  //DELAY SO JQUERY LIBRARY IS LOADED
-setTimeout(function (){
- 
-//Export to Google
-$.ajax({
-url: WEB_APP_URL,
-type: "POST",
-data : storyline,
-success: function(data)
-{
-console.log(data);
-},
-error: function(err) {
-console.log('Error:', err);
-}
-});
-return false;
-}, 1000);
-}
-
-function Script4()
 {
   var player = GetPlayer();
  
@@ -102,68 +53,51 @@ storyline =
 }
 }
 
+function Script3()
+{
+  var d = new Date();
+var hour = d.getHours()
+var minute = d.getMinutes()
+var tiem = hour + ":" + minute
+var player = GetPlayer();
+player.SetVar("final",tiem);
+}
+
+function Script4()
+{
+  var head = document.getElementsByTagName('head')[0];
+var script = document.createElement('script');
+script.src = '//code.jquery.com/jquery-1.11.0.min.js';
+script.type = 'text/javascript';
+head.appendChild(script)
+}
+
 function Script5()
 {
-  var head = document.getElementsByTagName('head')[0];
-var script = document.createElement('script');
-script.src = '//code.jquery.com/jquery-1.11.0.min.js';
-script.type = 'text/javascript';
-head.appendChild(script)
-}
-
-function Script6()
-{
-  //DELAY SO JQUERY LIBRARY IS LOADED
-setTimeout(function (){
- 
-//Export to Google
-$.ajax({
-url: WEB_APP_URL,
-type: "POST",
-data : storyline,
-success: function(data)
-{
-console.log(data);
-},
-error: function(err) {
-console.log('Error:', err);
-}
-});
-return false;
-}, 1000);
-}
-
-function Script7()
-{
-  var head = document.getElementsByTagName('head')[0];
-var script = document.createElement('script');
-script.src = '//code.jquery.com/jquery-1.11.0.min.js';
-script.type = 'text/javascript';
-head.appendChild(script)
-}
-
-function Script8()
-{
   var player = GetPlayer();
-
-var d = new Date();
-var o = {hour:'2-digit', minute:'2-digit', second:'2-digit'};
  
 //PLACE YOUR WEB APP URL
-WEB_APP_URL = "https://script.google.com/macros/s/AKfycbxeyh3zhG_QrgGPxlEiUzR42frYCEns61Ml7JvoEid-XZOfqG8d/exec";
+WEB_APP_URL = "https://script.google.com/macros/s/AKfycbw7-dJpAPCbLJdfgbANQV_HvNr-9eUi9vU28XVrze5EbcDeBYw/exec";
  
 // STORE ARTICULATE STORYLINE VARIABLES
 // "Columnname_Google_Spreadsheet" : player.GetVar("Name_Storyline_Variable")
 // ATTENTION: Use a comma if you use multiple Storyline variables
 storyline =
 {
+  "FECHA" : new Date().toJSON().slice(0,10), //STORE DATE
+  "MATRICULA" : player.GetVar("Matricula"),
+  "NOMBRE" : player.GetVar("Nombre"),
+  "NIVEL ACADEMICO" : player.GetVar("NivelEstudios"),
+  "INSTITUCION" : player.GetVar("Institucion"),
+  "SEMESTRE" : player.GetVar("Semestres"),
   "DIAPOSITIVA VISUALISADAS" : player.GetVar("VIS"),
   "TOTAL DE DIAPOSITIVAS" : player.GetVar("TOT"),
-  "HORA SALIDA" : d.toLocaleDateString('en-US', o)
+  "HORA SALIDA" : player.GetVar("final"),
+  "HORA INICIO" : player.GetVar("inicio")
 }
 }
 
-function Script9()
+function Script6()
 {
   //DELAY SO JQUERY LIBRARY IS LOADED
 setTimeout(function (){
