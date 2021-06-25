@@ -2,22 +2,22 @@ function ExecuteScript(strId)
 {
   switch (strId)
   {
-      case "6JJA7tPMFDB":
+      case "6fQWGHVH2rd":
         Script1();
         break;
-      case "6ZM3BJfQ4R2":
+      case "5lzkrlwoHO2":
         Script2();
         break;
-      case "5qkxXB4e692":
+      case "6S1PkI9zY1K":
         Script3();
         break;
-      case "5rUhOrKVkO7":
+      case "5zf9GNaKJfA":
         Script4();
         break;
-      case "6KDF4XpbOlI":
+      case "5fbxNvDldCq":
         Script5();
         break;
-      case "5YmWZuxBI68":
+      case "6cLukqs4wFL":
         Script6();
         break;
   }
@@ -91,7 +91,7 @@ storyline =
   "INSTITUCION" : player.GetVar("Institucion"),
   "SEMESTRE" : player.GetVar("Semestres"),
   "DIAPOSITIVA VISUALISADAS" : player.GetVar("VIS"),
-  "TOTAL DE DIAPOSITIVAS" : player.GetVar("TOT"),
+  "DIAPOSITIVA TOTAL" : player.GetVar("TOT"),
   "HORA SALIDA" : player.GetVar("final"),
   "HORA INICIO" : player.GetVar("inicio")
 }
