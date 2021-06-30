@@ -2,23 +2,29 @@ function ExecuteScript(strId)
 {
   switch (strId)
   {
-      case "6Rdelp6ZGER":
+      case "6CzShRgQuBK":
         Script1();
         break;
-      case "6HaTJ9SlaqK":
+      case "68ewRDoZ16N":
         Script2();
         break;
-      case "5nGcX9N8s5l":
+      case "5b6awllKQQK":
         Script3();
         break;
-      case "6jVKb80zfK9":
+      case "6iadBRpvIIU":
         Script4();
         break;
-      case "5jQkdMJlJwT":
+      case "6LzlaWjhzps":
         Script5();
         break;
-      case "6IbJabozvs6":
+      case "6dFFMQcFTMD":
         Script6();
+        break;
+      case "6iLVk3fah6O":
+        Script7();
+        break;
+      case "66nzOg8mIEr":
+        Script8();
         break;
   }
 }
@@ -34,6 +40,18 @@ player.SetVar("inicio",tiem);
 }
 
 function Script2()
+{
+  var currentTime = new Date()
+var month = currentTime.getMonth() + 1
+var day = currentTime.getDate()
+var year = currentTime.getFullYear()
+var dateString=day + "/" + month + "/" + year
+var player = GetPlayer();
+player.SetVar("fechainicio",dateString);
+
+}
+
+function Script3()
 {
   var player = GetPlayer();
  
@@ -53,7 +71,7 @@ storyline =
 }
 }
 
-function Script3()
+function Script4()
 {
   var d = new Date();
 var hour = d.getHours()
@@ -63,16 +81,19 @@ var player = GetPlayer();
 player.SetVar("final",tiem);
 }
 
-function Script4()
+function Script5()
 {
-  var head = document.getElementsByTagName('head')[0];
-var script = document.createElement('script');
-script.src = '//code.jquery.com/jquery-1.11.0.min.js';
-script.type = 'text/javascript';
-head.appendChild(script)
+  var currentTime = new Date()
+var month = currentTime.getMonth() + 1
+var day = currentTime.getDate()
+var year = currentTime.getFullYear()
+var dateString=day + "/" + month + "/" + year
+var player = GetPlayer();
+player.SetVar("fechasalida",dateString);
+
 }
 
-function Script5()
+function Script6()
 {
   var player = GetPlayer();
  
@@ -84,20 +105,32 @@ WEB_APP_URL = "https://script.google.com/macros/s/AKfycbw7-dJpAPCbLJdfgbANQV_HvN
 // ATTENTION: Use a comma if you use multiple Storyline variables
 storyline =
 {
-  "FECHA" : new Date().toJSON().slice(0,10), //STORE DATE
+  "FECHA INICIO" : player.GetVar("fechainicio"),
+  "HORA INICIO" : player.GetVar("inicio"),
+  "FECHA SALIDA" : player.GetVar("fechasalida"),
+  "HORA SALIDA" : player.GetVar("final"),
   "MATRICULA" : player.GetVar("Matricula"),
   "NOMBRE" : player.GetVar("Nombre"),
   "NIVEL ACADEMICO" : player.GetVar("NivelEstudios"),
   "INSTITUCION" : player.GetVar("Institucion"),
   "SEMESTRE" : player.GetVar("Semestres"),
   "DIAPOSITIVA VISUALISADAS" : player.GetVar("VIS"),
-  "DIAPOSITIVA TOTAL" : player.GetVar("TOT"),
-  "HORA SALIDA" : player.GetVar("final"),
-  "HORA INICIO" : player.GetVar("inicio")
+  "DIAPOSITIVA TOTAL" : player.GetVar("TOT")
+  
+  
 }
 }
 
-function Script6()
+function Script7()
+{
+  var head = document.getElementsByTagName('head')[0];
+var script = document.createElement('script');
+script.src = '//code.jquery.com/jquery-1.11.0.min.js';
+script.type = 'text/javascript';
+head.appendChild(script)
+}
+
+function Script8()
 {
   //DELAY SO JQUERY LIBRARY IS LOADED
 setTimeout(function (){
